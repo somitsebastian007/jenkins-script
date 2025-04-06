@@ -1,8 +1,9 @@
 1. update your system packages to ensure you have the latest versions:
 sudo apt update && sudo apt upgrade -y
 
-2. Jenkins requires Java. Install OpenJDK 17:
-sudo apt install openjdk-17-jdk -y
+2. Jenkins requires Java. Install OpenJDK 17 (or Java 21):
+sudo apt install openjdk-17-jdk -y  
+#sudo apt install openjdk-21-jdk -y 
 
 3. Verify Java installation:
 java -version
@@ -28,3 +29,8 @@ sudo systemctl enable jenkins
 
 9. Check the status:
 sudo systemctl status jenkins
+
+10. Install MAVEN
+# sudo apt update
+# sudo apt install maven -y
+# mvn --version
