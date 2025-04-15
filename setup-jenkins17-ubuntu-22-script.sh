@@ -7,10 +7,15 @@ echo "Updating system packages..."
 sudo apt update && sudo apt upgrade -y
 
 echo "Installing OpenJDK 17..."
-sudo apt install openjdk-21-jdk -y
+sudo apt install openjdk-17-jdk -y
 
 echo "Verifying Java installation..."
 java -version
+
+#Install MAVEN
+sudo apt update
+sudo apt install maven -y
+mvn --version
 
 echo "Adding Jenkins GPG key..."
 curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
