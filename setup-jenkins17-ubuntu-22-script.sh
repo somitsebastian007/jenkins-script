@@ -7,7 +7,7 @@ echo "Updating system packages..."
 sudo apt update && sudo apt upgrade -y
 
 echo "Installing OpenJDK 17..."
-sudo apt install openjdk-17-jdk -y
+sudo apt install openjdk-21-jdk -y
 
 echo "Verifying Java installation..."
 java -version
